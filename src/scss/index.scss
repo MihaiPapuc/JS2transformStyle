@@ -1,0 +1,77 @@
+@import 'normalize.css/normalize.css';
+
+$base: #ffc600;
+$blur: 0px;
+$spacing: 0px;
+
+:root {
+  --base: $base;
+  --blur: $blur;
+  --spacing: $spacing;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'montserrat';
+  font-size: 80px;
+  text-align: center;
+}
+
+.controls {
+  text-align: center;
+  font-family: 'montserrat';
+  font-size: 60px;
+}
+
+#img {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+.hl {
+  color: var(--base);
+}
+
+// Scrollbar
+
+body {
+  min-height: 200vh;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+// ::-webkit-scrollbar {
+//   width: 2rem;
+//   height: 1rem;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   background: #ffc600;
+//   border-radius: 1rem;
+// }
+
+// ::-webkit-scrollbar-track {
+//   background: rgba(#000, 0.2);
+//   border-radius: 1rem;
+// }
+
+#scrollbar {
+  position: fixed;
+  top: 32px;
+  right: 32px;
+  transform: rotate(90deg) translateX(100%);
+}
