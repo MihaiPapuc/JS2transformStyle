@@ -4,7 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../scss/index.scss" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Update css variables using <span class="js">JS</span></h1>
+    <div class="controls">
+      <label for="spacing" style="padding: 10px">Spacing:</label>
+      <input type="range" min="10" max="200" value="10" data-sizing="px" />
+
+      <label for="blur" style="padding: 10px">Blur:</label>
+      <input type="blur" min="0" max="120" value="0" data-sizing="px" />
+
+      <label for="color" style="padding: 10px">Color</label>
+      <input type="color" name="default" value="#ccccc" />
+
+      <img
+        id="img"
+        src="../image/27298.jpg"
+        alt="color-splash"
+        width="600px"
+        height="300px"
+      />
+    </div>
+  </body>
+  <script src="../JS/index.js"></script>
 </html>
