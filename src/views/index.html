@@ -8,25 +8,49 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Update css variables using <span class="js">JS</span></h1>
+    <h1>Update css variables using <span class="hl">JS</span></h1>
+
+    <input
+      type="range"
+      name="scroll"
+      min="0"
+      max="100"
+      value="0"
+      id="scrollbar"
+    />
+
     <div class="controls">
       <label for="spacing" style="padding: 10px">Spacing:</label>
-      <input type="range" min="10" max="200" value="10" data-sizing="px" />
+      <input
+        type="range"
+        name="spacing"
+        min="10"
+        max="200"
+        value="10"
+        data-sizing="px"
+      />
 
       <label for="blur" style="padding: 10px">Blur:</label>
-      <input type="blur" min="0" max="120" value="0" data-sizing="px" />
+      <input
+        type="range"
+        name="blur"
+        min="0"
+        max="120"
+        value="0"
+        data-sizing="px"
+      />
 
       <label for="color" style="padding: 10px">Color</label>
-      <input type="color" name="default" value="#ccccc" />
-
-      <img
-        id="img"
-        src="../image/27298.jpg"
-        alt="color-splash"
-        width="600px"
-        height="300px"
-      />
+      <input type="color" name="base" value="#f4f4f4" />
     </div>
+
+    <img
+      id="img"
+      src="../image/27298.jpg"
+      alt="fire"
+      width="600px"
+      height="300px"
+    />
   </body>
   <script src="../JS/index.js"></script>
 </html>
